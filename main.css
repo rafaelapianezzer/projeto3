@@ -1,47 +1,54 @@
 body {
     font-family: Roboto, sans-serif;
+    background-color: #060100;
+    color: aliceblue;
 }
 
 .navbar {
-    background-color: #0e0b0a;
+    background-color: #fff;
+}
+
+#sobre-a-academia img {
+    margin: 0 auto;
+    text-align: center;
 }
 
 #cabecalho .nav .nav-link.active {
-    background-color: #fff;
-    color: #e15f41;
+    background-color: #23b705;
+    color: #fff;
 }
 
 #cabecalho .nav .nav-link,
 .navbar-brand,
 .navbar-brand:hover,
-.nav-cardapio .nav-link.active:hover {
-    color: #fff;
+.nav-modalidades .nav-link.active:hover {
+    color: #23b705;
 }
 
 .navbar-toggler {
-    background-color: #ffeae6;
+    background-color: #028a00;
 }
 
 .section-title {
     font-family: Pacifico, cursive;
 }
 
-#sobre-o-restaurante, #cardapio {
-    background-color: #ffeae6;
+#sobre-a-academia, #modalidades {
+    background-color: #060100;
 }
 
 .text-colored {
-    color: #e15f41;
+    color: #23b705;
 }
 
-.nav-cardapio .nav-link.active,
+.nav-modalidades .nav-link.active,
 #fale-conosco button {
-    background-color: #e15f41;
+    background-color: #23b705;
     color: #fff;
 }
 
-.nav-cardapio .nav-link:hover {
-    color: #e15f41;
+.nav-modalidades .nav-link:hover {
+    color: #fff;
 }
 
 .social-links li {

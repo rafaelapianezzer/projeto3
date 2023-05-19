@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projeto 3</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,19 +22,19 @@
             <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item fw-bold">
-                        <a href="#sobre-o-restaurante" class="nav-link">
+                        <a href="#sobre-a-academia" class="nav-link">
                             <i class="bi bi-house-door me-1"></i>
                             Sobre a academia
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="#eventos" class="nav-link">
-                            <i class="bi bi-calendar-check me-1"></i>
+                        <a href="#unidades" class="nav-link">
+                            <i class="bi bi-geo-alt"></i>
                             Unidades
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="#cardapio" class="nav-link">
+                        <a href="#modalidades" class="nav-link">
                             <i class="bi bi-card-text me-1"></i>
                             Modalidades
                         </a>
@@ -50,17 +50,17 @@
         </div>
     </header>
     <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
-        <section id="sobre-o-restaurante">
+        <section id="sobre-a-academia">
             <div class="carousel slide" data-bs-ride="carousel" id="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="3000">
-                        <img src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pessoas fazendo crossfit">
+                        <img class="d-block img-fluid" src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pessoas fazendo crossfit">
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img src="https://cdn.pixabay.com/photo/2017/04/25/20/18/woman-2260736_640.jpg" alt="Mulher fazendo musculação">
+                        <img class="d-block img-fluid" src="https://cdn.pixabay.com/photo/2017/04/25/20/18/woman-2260736_640.jpg" alt="Mulher fazendo musculação">
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img src="https://cdn.pixabay.com/photo/2018/04/05/17/21/kettlebell-3293475_640.jpg" alt="Duas mulheres fazendo alongamento">
+                        <img class="d-block img-fluid" src="https://cdn.pixabay.com/photo/2018/04/05/17/21/kettlebell-3293475_640.jpg" alt="Duas mulheres fazendo alongamento">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -95,16 +95,17 @@
                 </div>
             </div>
         </section>
-        <section id="eventos" class="pt-5 pb-5">
+        <section id="unidades" class="pt-5 pb-5">
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title text-center">Unidades</span></h2>
+                    <h2 class="section-title text-center">
+                        <i class="bi bi-geo-alt"></i>
+                        Unidades
+                    </h2>
                 </div>
                 <div class="row mt-4">
                     <div class="col-md-4">
-                        <img src="images/eventos/aniversario.jpg" alt="" class="d-block w-100 rounded mb-2">
                         <h3 class="section-title text-colored fs-4">
-                            <i class="bi bi-calendar-heart-fill"></i>
                             Porto Belo - SC
                         </h3>
                         <p>
@@ -112,9 +113,7 @@
                         </p>
                     </div>
                     <div class="col-md-4">
-                        <img src="images/eventos/casamento.jpg" alt="" class="d-block w-100 rounded mb-2">
                         <h3 class="section-title text-colored fs-4">
-                            <i class="bi bi-arrow-through-heart-fill"></i>
                             Balneário Camboriú - SC
                         </h3>
                         <p>
@@ -122,9 +121,7 @@
                         </p>
                     </div>
                     <div class="col-md-4">
-                        <img src="images/eventos/confraternizacoes.jpg" alt="" class="d-block w-100 rounded mb-2">
                         <h3 class="section-title text-colored fs-4">
-                            <i class="bi bi-people-fill"></i>
                             Itajaí - SC
                         </h3>
                         <p>
@@ -134,76 +131,77 @@
                 </div>
             </div>
         </section>
-        <section id="cardapio" class="pt-5 pb-5">
+        <section id="modalidades" class="pt-5 pb-5">
             <div class="container">
                 <div class="row">
                     <h2 class="section-title text-center mb-5">
+                        <i class="bi bi-card-text me-1"></i>
                         Modalidades
                     </h2>
                 </div>
                 <div class="row">
                     <div class="col-md-2">
                         <aside>
-                            <nav class="nav nav-pills flex-column nav-cardapio">
-                                <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-sem-alcool" class="fw-bold text-start nav-link text-colored active">Musculação</button>
-                                <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas" class="fw-bold text-start nav-link text-colored">Crossfit</button>
-                                <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class="fw-bold text-start nav-link text-colored">Spinning</button>
-                                <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-principais" class="fw-bold text-start nav-link text-colored">Pilates</button>
-                                <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="fw-bold text-start nav-link text-colored">Boxe</button>
+                            <nav class="nav nav-pills flex-column nav-modalidades">
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#musculacao" class="fw-bold text-start nav-link text-colored active">Musculação</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#crossfit" class="fw-bold text-start nav-link text-colored">Crossfit</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#spinning" class="fw-bold text-start nav-link text-colored">Spinning</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#pilates" class="fw-bold text-start nav-link text-colored">Pilates</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#boxe" class="fw-bold text-start nav-link text-colored">Boxe</button>
                             </nav>
                         </aside>
                     </div>
                     <div class="col-md-10">
                         <div class="tab-content">
-                            <div class="tab-pane active" id="bebidas-sem-alcool">
+                            <div class="tab-pane active" id="musculacao">
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg" alt="Coca-cola">
-                                        <h5 class="text-colored fw-bold mt-2">555555555555</h5>
+                                    <div class="col-md-7">
+                                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2015/07/02/10/22/training-828726_640.jpg" alt="mulher fazendo musculacao">
+                                        <h5 class="text-colored fw-bold mt-2">Musculação</h5>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane" id="bebidas-alcoolicas">
+                            <div class="tab-pane" id="crossfit">
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/bebidas/cerveja.jpg" alt="Cerveja">
-                                        <h5 class="text-colored fw-bold mt-2">Cerveja</h5>
+                                    <div class="col-md-7">
+                                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2015/07/02/10/27/training-828764_640.jpg" alt="mulher fazendo crossfit">
+                                        <h5 class="text-colored fw-bold mt-2">Crossfit</h5>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane" id="entradas">
+                            <div class="tab-pane" id="spinning">
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg" alt="Nome da entrada">
-                                        <h5 class="text-colored fw-bold mt-2">Nome da entrada</h5>
+                                    <div class="col-md-7">
+                                        <img class="d-block" src="https://images.pexels.com/photos/4162582/pexels-photo-4162582.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Homem na bicicleta ergométrica">
+                                        <h5 class="text-colored fw-bold mt-2">Spinning</h5>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane" id="pratos-principais">
+                            <div class="tab-pane" id="pilates">
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/pratos/pizza.jpg" alt="Pizza">
-                                        <h5 class="text-colored fw-bold mt-2">Pizza</h5>
+                                    <div class="col-md-7">
+                                        <img class="d-block" src="https://cdn.pixabay.com/photo/2016/04/13/17/00/plank-1327256_640.jpg" alt="mulher fazendo pilates">
+                                        <h5 class="text-colored fw-bold mt-2">Pilates</h5>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane" id="sobremesas">
+                            <div class="tab-pane" id="boxe">
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <img class="d-block w-100" src="images/cardapio/sobremesas/bolo.jpg" alt="Bolo de chocolate">
-                                        <h5 class="text-colored fw-bold mt-2">Bolo de chocolate</h5>
+                                    <div class="col-md-7">
+                                        <img class="d-block" src="https://images.pexels.com/photos/4804260/pexels-photo-4804260.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Homem treinando boxe">
+                                        <h5 class="text-colored fw-bold mt-2">Boxe</h5>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
@@ -219,7 +217,10 @@
         <section id="fale-conosco" class="pt-5 pb-5">
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+                    <h2 class="section-title text-center">
+                        <i class="bi bi-chat-left-text me-1"></i>
+                        Fale conosco
+                    </h2>
                 </div>
                 <div class="row">
                     <div class="col-md-7 mb-5">
@@ -273,7 +274,7 @@
                                 Endereço
                             </h3>
                             <p>
-                                Rua Teste Exemplo nº 145, Bairro Bootstrap - São Paulo - SP
+                                Rua Exemplo nº 145, Bairro Bootstrap - Itajaí - SC
                             </p>
                         </div>
                     </div>
